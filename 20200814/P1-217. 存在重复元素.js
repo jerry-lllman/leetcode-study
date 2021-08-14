@@ -8,8 +8,8 @@
  var containsDuplicate1 = function(nums) {
 	if (nums.length < 2) return false
 	nums = nums.sort(((a, b) => a - b))
-	const length = nums.length - 1
-	for (let i = length; i > 0; i--){
+	const lastIndex = nums.length - 1
+	for (let i = lastIndex; i > 0; i--){
 			if (nums[i] === nums[i - 1]) {
 					return true
 			}
